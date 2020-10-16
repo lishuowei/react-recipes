@@ -1,0 +1,11 @@
+.recipeCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  max-width: 900px;
+}
+.recipes {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

@@ -1,0 +1,15 @@
+.card_link {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.card_link:hover {
+  background-color: darkgray;
+}

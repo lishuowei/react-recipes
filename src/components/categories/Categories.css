@@ -1,0 +1,11 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  max-width: 900px;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
