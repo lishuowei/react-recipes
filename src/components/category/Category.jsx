@@ -25,14 +25,15 @@ function Category() {
       <Header title={`${categoryName} Recipes`} />
       <div className="recipes">
         <div className="recipeCards">
-          {data.meals.map((meal) => (
-            <RecipeCard
-              key={meal.idMeal}
-              strMeal={meal.strMeal}
-              strMealThumb={meal.strMealThumb}
-              idMeal={meal.idMeal}
-            />
-          ))}
+          {data &&
+            data.meals.map((meal) => (
+              <RecipeCard
+                key={meal.idMeal}
+                strMeal={meal.strMeal}
+                strMealThumb={meal.strMealThumb}
+                idMeal={meal.idMeal}
+              />
+            ))}
         </div>
       </div>
     </>

@@ -18,9 +18,9 @@ function Recipe() {
 
     fetchData();
   }, [recipeId]);
-
+  const ingredientsTotal = 20;
   const ingredientsAndMeasures = [];
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= ingredientsTotal; i++) {
     recipe[`strMeasure${i}`] !== "" &&
       recipe[`strMeasure${i}`] &&
       ingredientsAndMeasures.push({

@@ -22,15 +22,16 @@ function Categories() {
       <Header title="Categories" />
       <div className="categories">
         <div className="cards">
-          {data.categories.map((category) => (
-            <CategoryCard
-              key={category.idCategory}
-              cardTitle={category.strCategory}
-              imgThumbStr={category.strCategoryThumb}
-              linkText="See Recipes"
-              linkHref={`/category/${category.strCategory}`}
-            />
-          ))}
+          {data &&
+            data.categories.map((category) => (
+              <CategoryCard
+                key={category.idCategory}
+                cardTitle={category.strCategory}
+                imgThumbStr={category.strCategoryThumb}
+                linkText="See Recipes"
+                linkHref={`/category/${category.strCategory}`}
+              />
+            ))}
         </div>
       </div>
     </>
