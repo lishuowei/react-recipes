@@ -2,7 +2,7 @@ import React from "react";
 import { render,unmountComponentAtNode } from "react-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
 import { act } from "react-dom/test-utils";
-import LinkButton from '../../../components/shared/linkButton/LinkButton'
+import LinkButton from './LinkButton'
 
 let container = null;
 beforeEach(() => {
